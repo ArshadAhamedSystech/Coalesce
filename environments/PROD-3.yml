@@ -2,16 +2,16 @@ fileVersion: 1
 id: "3"
 mappingDefinitions:
   COALESCE_CDC:
-    database: USER$ARSHADM
+    database: DBT_TRAINING
     schema: COALESCE_CDC
   COALESCE_INT:
-    database: USER$ARSHADM
+    database: DBT_TRAINING
     schema: COALESCE_INT
   COALESCE_SRC:
-    database: USER$ARSHADM
+    database: DBT_TRAINING
     schema: COALESCE_SRC
   COALESCE_TGT:
-    database: USER$ARSHADM
+    database: DBT_TRAINING
     schema: COALESCE_TGT
 name: PROD
 type: Environment
