@@ -1,0 +1,17 @@
+fileVersion: 1
+id: "2"
+mappingDefinitions:
+  COALESCE_CDC:
+    database: DBT_TRAINING
+    schema: COALESCE_CDC
+  COALESCE_INT:
+    database: DBT_TRAINING
+    schema: COALESCE_INT
+  COALESCE_SRC:
+    database: DBT_TRAINING
+    schema: COALESCE_SRC
+  COALESCE_TGT:
+    database: DBT_TRAINING
+    schema: COALESCE_TGT
+name: DEV
+type: Environment

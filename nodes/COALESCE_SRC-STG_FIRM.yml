@@ -1,0 +1,234 @@
+fileVersion: 1
+id: daf1bfdb-6d60-4f8d-b1c1-0e9b67bdb2a1
+name: STG_FIRM
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: COALESCE_SRC
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests:
+          hasNull: true
+          isDistinct: true
+        columnReference:
+          columnCounter: 587b97cf-f730-47db-bc1b-8a40c3e7474f
+          stepCounter: daf1bfdb-6d60-4f8d-b1c1-0e9b67bdb2a1
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: FIRM_ID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 15ffb7f7-13d4-46c1-acfc-2bdda1f9f776
+                stepCounter: ae750937-889e-42b2-a0ca-20930ad0a327
+            transform: ""
+      - appliedColumnTests:
+          hasNull: false
+          isDistinct: false
+        columnReference:
+          columnCounter: 4e055d2c-f3ee-4d68-a5a3-c6f1b268baa4
+          stepCounter: daf1bfdb-6d60-4f8d-b1c1-0e9b67bdb2a1
+        config: {}
+        dataType: VARCHAR(200)
+        description: ""
+        name: FIRM_NAME
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 05886f38-e309-4933-92a1-ad506a450fe7
+                stepCounter: ae750937-889e-42b2-a0ca-20930ad0a327
+            transform: ""
+      - appliedColumnTests:
+          hasNull: false
+          isDistinct: false
+        columnReference:
+          columnCounter: 854fd960-2a0c-4f3f-9bea-b54230b0ce45
+          stepCounter: daf1bfdb-6d60-4f8d-b1c1-0e9b67bdb2a1
+        config: {}
+        dataType: VARCHAR(20)
+        description: ""
+        name: FIRM_CODE
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4571d2a1-6c25-458c-a575-07d499262a94
+                stepCounter: ae750937-889e-42b2-a0ca-20930ad0a327
+            transform: ""
+      - appliedColumnTests:
+          hasNull: false
+          isDistinct: false
+        columnReference:
+          columnCounter: 1dde1d38-44fb-43e8-80c0-ff077f73ec0d
+          stepCounter: daf1bfdb-6d60-4f8d-b1c1-0e9b67bdb2a1
+        config: {}
+        dataType: VARCHAR(500)
+        description: ""
+        name: ADDRESS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 550fc84c-1611-459f-984f-405fa4e20548
+                stepCounter: ae750937-889e-42b2-a0ca-20930ad0a327
+            transform: ""
+      - appliedColumnTests:
+          hasNull: false
+          isDistinct: false
+        columnReference:
+          columnCounter: 076b150a-496b-40e6-bc1d-36f546c81e2f
+          stepCounter: daf1bfdb-6d60-4f8d-b1c1-0e9b67bdb2a1
+        config: {}
+        dataType: VARCHAR(100)
+        description: ""
+        name: CITY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 20e97b0e-8afa-4bf3-a662-95a49f3078bc
+                stepCounter: ae750937-889e-42b2-a0ca-20930ad0a327
+            transform: ""
+      - appliedColumnTests:
+          hasNull: false
+          isDistinct: false
+        columnReference:
+          columnCounter: c77c7ba8-d8be-49b3-9c0f-016bcfb04dae
+          stepCounter: daf1bfdb-6d60-4f8d-b1c1-0e9b67bdb2a1
+        config: {}
+        dataType: VARCHAR(50)
+        description: ""
+        name: STATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c2c37005-cc24-47ad-9ba9-b5e9d7ca0b7b
+                stepCounter: ae750937-889e-42b2-a0ca-20930ad0a327
+            transform: ""
+      - appliedColumnTests:
+          hasNull: false
+          isDistinct: false
+        columnReference:
+          columnCounter: c0a6e91a-f831-4aeb-b14e-899ad070d481
+          stepCounter: daf1bfdb-6d60-4f8d-b1c1-0e9b67bdb2a1
+        config: {}
+        dataType: VARCHAR(10)
+        description: ""
+        name: ZIP_CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a48f7632-1dcb-40ed-a1e8-3131c7e764f9
+                stepCounter: ae750937-889e-42b2-a0ca-20930ad0a327
+            transform: ""
+      - appliedColumnTests:
+          hasNull: false
+          isDistinct: false
+        columnReference:
+          columnCounter: 9426197e-3f80-440e-9045-b5c4ee22db84
+          stepCounter: daf1bfdb-6d60-4f8d-b1c1-0e9b67bdb2a1
+        config: {}
+        dataType: VARCHAR(20)
+        description: ""
+        name: PHONE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4b599a4b-6204-46e0-90f6-334f2f7114b8
+                stepCounter: ae750937-889e-42b2-a0ca-20930ad0a327
+            transform: ""
+      - appliedColumnTests:
+          hasNull: false
+          isDistinct: false
+        columnReference:
+          columnCounter: 928f6a46-ec9b-4424-9eb0-ff39cc2eec6f
+          stepCounter: daf1bfdb-6d60-4f8d-b1c1-0e9b67bdb2a1
+        config: {}
+        dataType: VARCHAR(200)
+        description: ""
+        name: EMAIL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 21f3a3c7-3702-4c31-92e1-6ea09864184e
+                stepCounter: ae750937-889e-42b2-a0ca-20930ad0a327
+            transform: ""
+      - appliedColumnTests:
+          hasNull: false
+          isDistinct: false
+        columnReference:
+          columnCounter: b5b8746a-4f36-47f0-a97c-db62ac2f5899
+          stepCounter: daf1bfdb-6d60-4f8d-b1c1-0e9b67bdb2a1
+        config: {}
+        dataType: VARCHAR(50)
+        description: ""
+        name: LICENSE_NUMBER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9ccca333-7a85-4e44-b43b-2e3c6827f700
+                stepCounter: ae750937-889e-42b2-a0ca-20930ad0a327
+            transform: ""
+      - appliedColumnTests:
+          hasNull: false
+          isDistinct: false
+        columnReference:
+          columnCounter: 045f2b80-959f-4eb5-9d00-9d374e72c2c4
+          stepCounter: daf1bfdb-6d60-4f8d-b1c1-0e9b67bdb2a1
+        config: {}
+        dataType: VARCHAR(20)
+        description: ""
+        name: STATUS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f8aa909d-05ec-4cb8-9a8a-766f648910ca
+                stepCounter: ae750937-889e-42b2-a0ca-20930ad0a327
+            transform: ""
+      - appliedColumnTests:
+          hasNull: false
+          isDistinct: false
+        columnReference:
+          columnCounter: b9674d19-bc82-4388-b7bd-8d4c564868d1
+          stepCounter: daf1bfdb-6d60-4f8d-b1c1-0e9b67bdb2a1
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: CREATED_AT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1e804804-9d77-4cce-926b-cefa857bdd25
+                stepCounter: ae750937-889e-42b2-a0ca-20930ad0a327
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs:
+      - hasNull
+      - isDistinct
+    sourceMapping:
+      - aliases:
+          FIRM: ae750937-889e-42b2-a0ca-20930ad0a327
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: COALESCE_SRC
+            nodeName: FIRM
+        join:
+          joinCondition: FROM {{ ref('COALESCE_SRC', 'FIRM') }} "FIRM"
+        name: STG_FIRM
+        noLinkRefs: []
+  name: STG_FIRM
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

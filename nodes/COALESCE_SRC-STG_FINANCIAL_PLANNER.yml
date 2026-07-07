@@ -1,0 +1,214 @@
+fileVersion: 1
+id: 8c97fef7-4985-4b04-8dcf-b2d33dc66d70
+name: STG_FINANCIAL_PLANNER
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: COALESCE_SRC
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 62d51482-dc28-446d-a032-ccd9157c092a
+          stepCounter: 8c97fef7-4985-4b04-8dcf-b2d33dc66d70
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: FP_ID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: daaf743f-6381-473f-90ad-b3701c9a3c33
+                stepCounter: 42816065-b929-4f89-ad33-dbbbca478f4c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5f18522b-4d59-4282-8e21-0d8473c11e05
+          stepCounter: 8c97fef7-4985-4b04-8dcf-b2d33dc66d70
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: FIRM_ID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d5201ed5-9b26-423a-b491-6d9c4d90622e
+                stepCounter: 42816065-b929-4f89-ad33-dbbbca478f4c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 11634355-7292-49b2-b047-28ed8d484921
+          stepCounter: 8c97fef7-4985-4b04-8dcf-b2d33dc66d70
+        config: {}
+        dataType: VARCHAR(100)
+        description: ""
+        name: FIRST_NAME
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5c14985c-7a7a-4479-b7cf-e7428ac28ac0
+                stepCounter: 42816065-b929-4f89-ad33-dbbbca478f4c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e40267ba-3209-4649-91b2-7d0fce4a195d
+          stepCounter: 8c97fef7-4985-4b04-8dcf-b2d33dc66d70
+        config: {}
+        dataType: VARCHAR(100)
+        description: ""
+        name: LAST_NAME
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 93261f14-5b78-48e9-91fc-b8af01b9a35a
+                stepCounter: 42816065-b929-4f89-ad33-dbbbca478f4c
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7c467ae1-1fb2-4e57-a969-bbc660e5ef38
+          stepCounter: 8c97fef7-4985-4b04-8dcf-b2d33dc66d70
+        config: {}
+        dataType: varchar(100)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: FULL_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: "CONCAT(\"FINANCIAL_PLANNER\".\"FIRST_NAME\" ||' ' ||\"FINANCIAL_PLANNER\".\"LAST_NAME\") "
+        systemColumnType: None
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: af3e9d3a-1fea-4752-b2fd-0aa6e23b12b6
+          stepCounter: 8c97fef7-4985-4b04-8dcf-b2d33dc66d70
+        config: {}
+        dataType: VARCHAR(200)
+        description: ""
+        name: EMAIL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a1120b20-7ec7-4348-aa7d-de75650d9244
+                stepCounter: 42816065-b929-4f89-ad33-dbbbca478f4c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3df8cb64-0dc9-4acc-b02a-336bdaae8aac
+          stepCounter: 8c97fef7-4985-4b04-8dcf-b2d33dc66d70
+        config: {}
+        dataType: VARCHAR(20)
+        description: ""
+        name: PHONE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: de2c0ac4-5d46-467c-b43b-8abd7bb2c661
+                stepCounter: 42816065-b929-4f89-ad33-dbbbca478f4c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b4523445-aa3a-436a-978f-100d1484a53d
+          stepCounter: 8c97fef7-4985-4b04-8dcf-b2d33dc66d70
+        config: {}
+        dataType: VARCHAR(50)
+        description: ""
+        name: LICENSE_NUMBER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0ec294bc-233b-4120-91a6-dcb4a8625a84
+                stepCounter: 42816065-b929-4f89-ad33-dbbbca478f4c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a8894913-ba9a-4524-9465-5666b8b96cfc
+          stepCounter: 8c97fef7-4985-4b04-8dcf-b2d33dc66d70
+        config: {}
+        dataType: VARCHAR(50)
+        description: ""
+        name: DESIGNATION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a1732ef2-c209-4332-850b-b495abd4aa18
+                stepCounter: 42816065-b929-4f89-ad33-dbbbca478f4c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 26983eb8-61ab-4ce6-8294-dda9724af04e
+          stepCounter: 8c97fef7-4985-4b04-8dcf-b2d33dc66d70
+        config: {}
+        dataType: DATE
+        description: ""
+        name: HIRE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b2793ed2-1081-4660-a786-488288b52bf3
+                stepCounter: 42816065-b929-4f89-ad33-dbbbca478f4c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1be660fe-b81b-442d-a143-61dfb5057d60
+          stepCounter: 8c97fef7-4985-4b04-8dcf-b2d33dc66d70
+        config: {}
+        dataType: VARCHAR(20)
+        description: ""
+        name: STATUS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bf65d1f7-cc6c-4cc3-b467-d9d57577f9b8
+                stepCounter: 42816065-b929-4f89-ad33-dbbbca478f4c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: dfd10e2c-87de-4804-ba40-f95c0707a055
+          stepCounter: 8c97fef7-4985-4b04-8dcf-b2d33dc66d70
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: CREATED_AT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5cbdc3f5-9732-41cd-87e4-ce08d0b1f489
+                stepCounter: 42816065-b929-4f89-ad33-dbbbca478f4c
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          FINANCIAL_PLANNER: 42816065-b929-4f89-ad33-dbbbca478f4c
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: COALESCE_SRC
+            nodeName: FINANCIAL_PLANNER
+        join:
+          joinCondition: FROM {{ ref('COALESCE_SRC', 'FINANCIAL_PLANNER') }} "FINANCIAL_PLANNER"
+        name: STG_FINANCIAL_PLANNER
+        noLinkRefs: []
+  name: STG_FINANCIAL_PLANNER
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

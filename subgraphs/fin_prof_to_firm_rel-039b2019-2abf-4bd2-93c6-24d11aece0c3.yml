@@ -1,0 +1,12 @@
+fileVersion: 1
+id: 039b2019-2abf-4bd2-93c6-24d11aece0c3
+name: fin_prof_to_firm_rel
+steps:
+  - 016f3773-b2b8-42b4-8651-da8b32adc855
+  - 42816065-b929-4f89-ad33-dbbbca478f4c
+  - 5dfb50de-3c2f-4b98-bada-60d93e70f9a3
+  - 81a41e22-5c32-4eab-9ecd-17bc0124d10e
+  - 8c97fef7-4985-4b04-8dcf-b2d33dc66d70
+  - ae750937-889e-42b2-a0ca-20930ad0a327
+  - daf1bfdb-6d60-4f8d-b1c1-0e9b67bdb2a1
+type: Subgraph

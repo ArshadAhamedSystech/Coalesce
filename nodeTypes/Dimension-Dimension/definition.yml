@@ -2,7 +2,7 @@ fileVersion: 1
 id: Dimension
 isDisabled: false
 metadata:
-  defaultStorageLocation: null
+  defaultStorageLocation: COALESCE_CDC
   error: null
   nodeMetadataSpec: |-
     capitalized: Dimension
