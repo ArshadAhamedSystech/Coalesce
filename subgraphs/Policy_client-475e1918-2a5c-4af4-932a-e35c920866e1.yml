@@ -1,9 +1,0 @@
-fileVersion: 1
-id: 475e1918-2a5c-4af4-932a-e35c920866e1
-name: Policy_client
-steps:
-  - 1225cd88-eb96-4ae5-abdf-6c11bf4e33ea
-  - 1e08d6c9-f405-495a-9bd1-d351699de738
-  - 9468a26b-65be-4647-8737-a6e6e1a277e1
-  - c15c8be9-f4df-4430-82b7-fb224165e28c
-type: Subgraph
