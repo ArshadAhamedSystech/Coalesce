@@ -1,7 +1,0 @@
-defaultStorageMapping: COALESCE_SRC
-fileVersion: 1
-locations:
-  - COALESCE_CDC
-  - COALESCE_INT
-  - COALESCE_SRC
-  - COALESCE_TGT
