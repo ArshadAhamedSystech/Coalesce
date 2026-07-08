@@ -1,0 +1,154 @@
+fileVersion: 1
+id: 3127de25-49c0-4342-bdda-2ac6b0138be9
+name: STG_BANK_ACCOUNTS
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: STAGE
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests:
+          hasNull: true
+          isDistinct: true
+        columnReference:
+          columnCounter: 1cc9b0df-778b-4f63-87a5-ca8cbd5020ae
+          stepCounter: 3127de25-49c0-4342-bdda-2ac6b0138be9
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: ACCOUNT_NUMBER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1aef9b86-3297-400b-a594-0c40f009db7b
+                stepCounter: cccfdc3e-5e3e-4e64-9403-2abb817c4e48
+            transform: ""
+      - appliedColumnTests:
+          hasNull: true
+          isDistinct: false
+        columnReference:
+          columnCounter: 4321bfe1-0e40-491a-87bd-fa729655030e
+          stepCounter: 3127de25-49c0-4342-bdda-2ac6b0138be9
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: CUSTOMER_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e634ce41-3826-40dc-83b2-5d68eee59969
+                stepCounter: cccfdc3e-5e3e-4e64-9403-2abb817c4e48
+            transform: ""
+      - appliedColumnTests:
+          hasNull: false
+          isDistinct: false
+        columnReference:
+          columnCounter: 7d6b18a9-c997-4cdd-a862-d175b77fca16
+          stepCounter: 3127de25-49c0-4342-bdda-2ac6b0138be9
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: ACCOUNT_TYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 935d467b-3818-4f31-80ef-cc87714bba5b
+                stepCounter: cccfdc3e-5e3e-4e64-9403-2abb817c4e48
+            transform: ""
+      - appliedColumnTests:
+          hasNull: false
+          isDistinct: false
+        columnReference:
+          columnCounter: 4a71f125-b9ec-4f30-8619-f9c0108143d6
+          stepCounter: 3127de25-49c0-4342-bdda-2ac6b0138be9
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: OPEN_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 88323f70-71d7-4f96-ad78-ade96f46d9c8
+                stepCounter: cccfdc3e-5e3e-4e64-9403-2abb817c4e48
+            transform: ""
+      - appliedColumnTests:
+          hasNull: false
+          isDistinct: false
+        columnReference:
+          columnCounter: 556dc2b8-3d3b-4b3c-a543-6bfce5995bdc
+          stepCounter: 3127de25-49c0-4342-bdda-2ac6b0138be9
+        config: {}
+        dataType: NUMBER(38,2)
+        description: ""
+        name: BALANCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d5a8fa7e-1dfc-44d7-90a6-b0575d05d7cb
+                stepCounter: cccfdc3e-5e3e-4e64-9403-2abb817c4e48
+            transform: ""
+      - appliedColumnTests:
+          hasNull: false
+          isDistinct: false
+        columnReference:
+          columnCounter: cec5e995-90e8-4847-a9f5-e8e1c167322d
+          stepCounter: 3127de25-49c0-4342-bdda-2ac6b0138be9
+        config: {}
+        dataType: DATE
+        description: ""
+        name: CREATED_DT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a5f885f7-f57d-4a93-807c-ba05f03dfde1
+                stepCounter: cccfdc3e-5e3e-4e64-9403-2abb817c4e48
+            transform: ""
+      - appliedColumnTests:
+          hasNull: false
+          isDistinct: false
+        columnReference:
+          columnCounter: 3a9d97c4-6412-46bb-a8f0-08f9052634e9
+          stepCounter: 3127de25-49c0-4342-bdda-2ac6b0138be9
+        config: {}
+        dataType: DATE
+        description: ""
+        name: UPDATED_DT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5e22427b-6a58-4e39-9d02-00ed99a99abd
+                stepCounter: cccfdc3e-5e3e-4e64-9403-2abb817c4e48
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs:
+      - hasNull
+      - isDistinct
+    sourceMapping:
+      - aliases:
+          BANK_ACCOUNTS: cccfdc3e-5e3e-4e64-9403-2abb817c4e48
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SRC
+            nodeName: BANK_ACCOUNTS
+        join:
+          joinCondition: FROM {{ ref('SRC', 'BANK_ACCOUNTS') }} "BANK_ACCOUNTS"
+        name: STG_BANK_ACCOUNTS
+        noLinkRefs: []
+  name: STG_BANK_ACCOUNTS
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

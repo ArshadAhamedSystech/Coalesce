@@ -1,0 +1,175 @@
+fileVersion: 1
+id: 38cb7adb-6445-4d8d-b4c4-f2421a23ad7f
+name: STG_BANK_TRANSACTIONS
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: STAGE
+  materializationType: table
+  metadata:
+    appliedNodeTests:
+      - continueOnFailure: true
+        description: ""
+        name: Test
+        runOrder: After
+        templateString: ""
+    columns:
+      - appliedColumnTests:
+          hasNull: true
+          isDistinct: true
+        columnReference:
+          columnCounter: 0cb890da-9e19-41d5-856d-6c582673af22
+          stepCounter: 38cb7adb-6445-4d8d-b4c4-f2421a23ad7f
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: TXN_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 67b52e24-a232-4588-b293-520aff830788
+                stepCounter: f7327dc7-5466-495c-b7c2-e8198cc08555
+            transform: ""
+      - appliedColumnTests:
+          hasNull: true
+          isDistinct: false
+        columnReference:
+          columnCounter: 1bfa0567-fd32-44f6-b0b1-96ed606de7b6
+          stepCounter: 38cb7adb-6445-4d8d-b4c4-f2421a23ad7f
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: ACCOUNT_NUMBER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6bbd601c-35e8-4173-8443-b383fbb3a4dd
+                stepCounter: f7327dc7-5466-495c-b7c2-e8198cc08555
+            transform: ""
+      - appliedColumnTests:
+          hasNull: false
+          isDistinct: false
+        columnReference:
+          columnCounter: 5cfcdb0e-6fdf-42ef-afa8-71bce009f060
+          stepCounter: 38cb7adb-6445-4d8d-b4c4-f2421a23ad7f
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: TXN_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1d4f6861-1b00-49d7-84fb-213821380d74
+                stepCounter: f7327dc7-5466-495c-b7c2-e8198cc08555
+            transform: ""
+      - appliedColumnTests:
+          hasNull: false
+          isDistinct: false
+        columnReference:
+          columnCounter: 0178fd81-d04d-40ad-bd8d-8f14c24a1cfc
+          stepCounter: 38cb7adb-6445-4d8d-b4c4-f2421a23ad7f
+        config: {}
+        dataType: NUMBER(38,2)
+        description: ""
+        name: AMOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ce19787f-8334-4c1b-b2c7-a2a802cd6432
+                stepCounter: f7327dc7-5466-495c-b7c2-e8198cc08555
+            transform: ""
+      - appliedColumnTests:
+          hasNull: false
+          isDistinct: false
+        columnReference:
+          columnCounter: a07d1c32-3197-451a-bd21-8b5ccce7eec9
+          stepCounter: 38cb7adb-6445-4d8d-b4c4-f2421a23ad7f
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: TXN_TYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 885c0c14-2f69-48a4-9004-1fa56d7c09a4
+                stepCounter: f7327dc7-5466-495c-b7c2-e8198cc08555
+            transform: ""
+      - appliedColumnTests:
+          hasNull: false
+          isDistinct: false
+        columnReference:
+          columnCounter: b785d57c-32d8-4386-9d11-4016c2be0427
+          stepCounter: 38cb7adb-6445-4d8d-b4c4-f2421a23ad7f
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: TXN_STATUS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1fe8865b-b75a-49c6-b59c-bb9828e9196e
+                stepCounter: f7327dc7-5466-495c-b7c2-e8198cc08555
+            transform: ""
+      - appliedColumnTests:
+          hasNull: false
+          isDistinct: false
+        columnReference:
+          columnCounter: 75b5c88a-7766-4338-addf-9d1451fd331b
+          stepCounter: 38cb7adb-6445-4d8d-b4c4-f2421a23ad7f
+        config: {}
+        dataType: DATE
+        description: ""
+        name: CREATED_DT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 480be591-5676-435f-a6c0-75215fce3492
+                stepCounter: f7327dc7-5466-495c-b7c2-e8198cc08555
+            transform: ""
+      - appliedColumnTests:
+          hasNull: false
+          isDistinct: false
+        columnReference:
+          columnCounter: 919b9a5a-27ec-4878-9fa5-924af58189c2
+          stepCounter: 38cb7adb-6445-4d8d-b4c4-f2421a23ad7f
+        config: {}
+        dataType: DATE
+        description: ""
+        name: UPDATED_DT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4e51cb73-7244-4fe5-975c-6f4afdca872a
+                stepCounter: f7327dc7-5466-495c-b7c2-e8198cc08555
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs:
+      - isDistinct
+      - hasNull
+    sourceMapping:
+      - aliases:
+          BANK_TRANSACTIONS: f7327dc7-5466-495c-b7c2-e8198cc08555
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SRC
+            nodeName: BANK_TRANSACTIONS
+        join:
+          joinCondition: FROM {{ ref('SRC', 'BANK_TRANSACTIONS') }} "BANK_TRANSACTIONS"
+        name: STG_BANK_TRANSACTIONS
+        noLinkRefs: []
+  name: STG_BANK_TRANSACTIONS
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

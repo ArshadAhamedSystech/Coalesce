@@ -1,0 +1,11 @@
+fileVersion: 1
+id: 4b2dda9a-4aa7-40e9-9a20-73bbe1d19dcc
+name: Bank_Sales
+steps:
+  - 3127de25-49c0-4342-bdda-2ac6b0138be9
+  - 38cb7adb-6445-4d8d-b4c4-f2421a23ad7f
+  - 66fb5e22-3cd1-4b8a-952e-1ee47750383a
+  - cccfdc3e-5e3e-4e64-9403-2abb817c4e48
+  - ea52c72c-9ae8-45e9-8241-351f5a66f697
+  - f7327dc7-5466-495c-b7c2-e8198cc08555
+type: Subgraph
