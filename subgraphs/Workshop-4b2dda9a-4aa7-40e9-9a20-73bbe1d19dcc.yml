@@ -4,10 +4,17 @@ name: Workshop
 steps:
   - 0b4a1665-28cb-408c-8f9f-bc0b851dbd0d
   - 0c5708d9-20a9-4d20-8edf-7a04ba32d1a5
+  - 143db86e-72a5-47fd-86de-09a298fc9dcc
+  - 15556698-d163-4df3-a777-af74485ef209
   - 34d09b0e-d8e9-4888-b844-4e114c227120
+  - 385290c9-c539-4938-ac59-8d2e72530c54
+  - 3949bc02-c5d8-4b30-a924-3739b1db4bbd
+  - 490062b5-4bb1-4c3c-bece-a22cf13b0a27
   - 4d60cdd4-3fef-42dc-aad6-345a4bb2ad55
+  - 77285c0b-31d4-4638-9ac8-d0f128dcbf76
   - 79934468-e3cb-4e2e-9f22-91765461dc10
   - b9cebf8d-8ca0-483e-abf3-b45bdc9ddd2a
   - e3167130-b9ec-4c2b-91fb-ddafd53a3880
+  - eb541c9d-e414-4dc2-901e-18416f383ba1
   - fb3f3ce1-1956-4987-bb80-8d39e35a0b6b
 type: Subgraph

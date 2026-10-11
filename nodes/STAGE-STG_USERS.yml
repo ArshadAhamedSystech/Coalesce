@@ -44,7 +44,7 @@ operation:
           - columnReferences:
               - columnCounter: 81a72113-15c4-4ff3-822b-2ca3c535cd4f
                 stepCounter: 34d09b0e-d8e9-4888-b844-4e114c227120
-            transform: ""
+            transform: "UPPER(TRIM(name)) "
       - appliedColumnTests: {}
         columnReference:
           columnCounter: a4a86398-c297-4fec-8909-c6283664b638
@@ -58,7 +58,7 @@ operation:
           - columnReferences:
               - columnCounter: e80f182d-c44a-4ab7-be8e-cb2200b8f8b4
                 stepCounter: 34d09b0e-d8e9-4888-b844-4e114c227120
-            transform: ""
+            transform: "LOWER(TRIM(email)) "
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 18a05856-13d7-4ecd-85d2-20efa0bdddd4
@@ -86,7 +86,7 @@ operation:
           - columnReferences:
               - columnCounter: 1c41208a-140d-4fd7-b46f-e34d13feb062
                 stepCounter: 34d09b0e-d8e9-4888-b844-4e114c227120
-            transform: ""
+            transform: "COALESCE(city, 'UNKNOWN') "
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 42289570-22a9-4ae5-b506-253eebe2d9ae
@@ -101,6 +101,31 @@ operation:
               - columnCounter: b8a74d7f-63a9-4938-a684-18b369801547
                 stepCounter: 34d09b0e-d8e9-4888-b844-4e114c227120
             transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 00c5aa40-a38e-4966-bfc9-7ec6921230f6
+          stepCounter: e3167130-b9ec-4c2b-91fb-ddafd53a3880
+        config: {}
+        dataType: varchar(250)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: CUSTOMER_STATUS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: |-
+              CASE
+                WHEN signup_date IS NULL THEN 'UNKNOWN'
+                WHEN signup_date < DATEADD(year, -2, CURRENT_DATE()) THEN 'MATURE'
+                ELSE 'NEW'
+              END
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
