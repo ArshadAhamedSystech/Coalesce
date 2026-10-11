@@ -1,5 +1,20 @@
 fileVersion: 1
 id: "9"
-mappingDefinitions: {}
+mappingDefinitions:
+  CDC:
+    database: DBT_TRAINING
+    schema: CDC_WORKSHOP
+  INTERMEDIATE:
+    database: DBT_TRAINING
+    schema: INT_WORKSHOP
+  SRC:
+    database: DBT_TRAINING
+    schema: WORKSHOP
+  STAGE:
+    database: DBT_TRAINING
+    schema: STG_WORKSHOP
+  TARGET:
+    database: DBT_TRAINING
+    schema: TGT_WORKSHOP
 name: Workshop_Prod
 type: Environment
