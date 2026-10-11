@@ -1,0 +1,14 @@
+fileVersion: 1
+id: "1"
+macroString: |-
+  {% macro get_last_load_date(table_name) %}
+
+  (
+  SELECT COALESCE(LAST_UPDATE_DATE,'1900-01-01'::TIMESTAMP)
+  FROM DBT_TRAINING.COALESCE_SRC.LOAD_CONTROL
+  WHERE TABLE_NAME='{{ table_name }}'
+  )
+
+  {% endmacro %}
+name: macro
+type: Macro

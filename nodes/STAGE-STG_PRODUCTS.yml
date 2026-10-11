@@ -1,0 +1,124 @@
+fileVersion: 1
+id: 0b4a1665-28cb-408c-8f9f-bc0b851dbd0d
+name: STG_PRODUCTS
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: STAGE
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 753b4e9c-d7e8-4622-a745-9f3c4736f582
+          stepCounter: 0b4a1665-28cb-408c-8f9f-bc0b851dbd0d
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PRODUCT_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6a4cd033-5f30-429a-a2f8-4b9d5fead3b9
+                stepCounter: 0c5708d9-20a9-4d20-8edf-7a04ba32d1a5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a9fb0e29-4f8b-4679-a004-117d29c36e0e
+          stepCounter: 0b4a1665-28cb-408c-8f9f-bc0b851dbd0d
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PRODUCT_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0bf77e6d-cf5b-4d7a-8e2c-7e2d68d5c421
+                stepCounter: 0c5708d9-20a9-4d20-8edf-7a04ba32d1a5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e0353e52-f3e7-4e0a-a468-08be0ab5eacc
+          stepCounter: 0b4a1665-28cb-408c-8f9f-bc0b851dbd0d
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: CATEGORY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 467ffc63-bd87-41da-977b-038264b49c83
+                stepCounter: 0c5708d9-20a9-4d20-8edf-7a04ba32d1a5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 93f3e794-b2a3-45fb-b2c3-1cf6e7802063
+          stepCounter: 0b4a1665-28cb-408c-8f9f-bc0b851dbd0d
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: BRAND
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 36012e32-c5f0-4bc2-adcc-4a2fa7af047c
+                stepCounter: 0c5708d9-20a9-4d20-8edf-7a04ba32d1a5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 89a339f2-dbc7-4be1-a00b-a63291ae0bdc
+          stepCounter: 0b4a1665-28cb-408c-8f9f-bc0b851dbd0d
+        config: {}
+        dataType: NUMBER(38,2)
+        description: ""
+        name: PRICE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6379b1d5-ab4b-4a10-8465-bb8e6f98a944
+                stepCounter: 0c5708d9-20a9-4d20-8edf-7a04ba32d1a5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a1e55db6-4406-46ef-95d0-340d33f92103
+          stepCounter: 0b4a1665-28cb-408c-8f9f-bc0b851dbd0d
+        config: {}
+        dataType: NUMBER(38,2)
+        description: ""
+        name: RATING
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 358109fd-439c-4144-8b96-98e45dfb417d
+                stepCounter: 0c5708d9-20a9-4d20-8edf-7a04ba32d1a5
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          PRODUCTS: 0c5708d9-20a9-4d20-8edf-7a04ba32d1a5
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SRC
+            nodeName: PRODUCTS
+        join:
+          joinCondition: FROM {{ ref('SRC', 'PRODUCTS') }} "PRODUCTS"
+        name: STG_PRODUCTS
+        noLinkRefs: []
+  name: STG_PRODUCTS
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

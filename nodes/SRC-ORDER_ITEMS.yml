@@ -1,6 +1,6 @@
 fileVersion: 1
-id: cccfdc3e-5e3e-4e64-9403-2abb817c4e48
-name: BANK_ACCOUNTS
+id: 79934468-e3cb-4e2e-9f22-91765461dc10
+name: ORDER_ITEMS
 operation:
   database: ""
   deployEnabled: true
@@ -13,13 +13,13 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 1aef9b86-3297-400b-a594-0c40f009db7b
-          stepCounter: cccfdc3e-5e3e-4e64-9403-2abb817c4e48
+          columnCounter: f2b02cab-d1ae-477a-abe4-43d3cf87f296
+          stepCounter: 79934468-e3cb-4e2e-9f22-91765461dc10
         config: {}
         dataType: VARCHAR(16777216)
         defaultValue: ""
         description: ""
-        name: ACCOUNT_NUMBER
+        name: ORDER_ITEM_ID
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -32,13 +32,13 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: e634ce41-3826-40dc-83b2-5d68eee59969
-          stepCounter: cccfdc3e-5e3e-4e64-9403-2abb817c4e48
+          columnCounter: f8a615a8-40c1-411e-96e8-c60b45a391e7
+          stepCounter: 79934468-e3cb-4e2e-9f22-91765461dc10
         config: {}
         dataType: VARCHAR(16777216)
         defaultValue: ""
         description: ""
-        name: CUSTOMER_ID
+        name: ORDER_ID
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -51,13 +51,13 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 935d467b-3818-4f31-80ef-cc87714bba5b
-          stepCounter: cccfdc3e-5e3e-4e64-9403-2abb817c4e48
+          columnCounter: d4f7dc97-43a1-4ca2-93b2-1e1c71937745
+          stepCounter: 79934468-e3cb-4e2e-9f22-91765461dc10
         config: {}
         dataType: VARCHAR(16777216)
         defaultValue: ""
         description: ""
-        name: ACCOUNT_TYPE
+        name: PRODUCT_ID
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -70,13 +70,13 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 88323f70-71d7-4f96-ad78-ade96f46d9c8
-          stepCounter: cccfdc3e-5e3e-4e64-9403-2abb817c4e48
+          columnCounter: 02e70794-fc4c-4f1e-adab-57315cc11b3f
+          stepCounter: 79934468-e3cb-4e2e-9f22-91765461dc10
         config: {}
         dataType: VARCHAR(16777216)
         defaultValue: ""
         description: ""
-        name: OPEN_DATE
+        name: USER_ID
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -89,13 +89,32 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: d5a8fa7e-1dfc-44d7-90a6-b0575d05d7cb
-          stepCounter: cccfdc3e-5e3e-4e64-9403-2abb817c4e48
+          columnCounter: 8363bdd4-9fe4-45a2-8bb8-8b56fb8df0da
+          stepCounter: 79934468-e3cb-4e2e-9f22-91765461dc10
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: QUANTITY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 55916696-11f2-403a-aa50-05cd97e719f6
+          stepCounter: 79934468-e3cb-4e2e-9f22-91765461dc10
         config: {}
         dataType: NUMBER(38,2)
         defaultValue: ""
         description: ""
-        name: BALANCE
+        name: ITEM_PRICE
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -108,13 +127,13 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: a5f885f7-f57d-4a93-807c-ba05f03dfde1
-          stepCounter: cccfdc3e-5e3e-4e64-9403-2abb817c4e48
+          columnCounter: 48022e2e-cf1c-4c62-91e5-2786e8c82ba9
+          stepCounter: 79934468-e3cb-4e2e-9f22-91765461dc10
         config: {}
-        dataType: DATE
+        dataType: NUMBER(38,2)
         defaultValue: ""
         description: ""
-        name: CREATED_DT
+        name: ITEM_TOTAL
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -122,26 +141,7 @@ operation:
             transform: ""
         transform: ""
         uniqueKey: false
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: 5e22427b-6a58-4e39-9d02-00ed99a99abd
-          stepCounter: cccfdc3e-5e3e-4e64-9403-2abb817c4e48
-        config: {}
-        dataType: DATE
-        defaultValue: ""
-        description: ""
-        name: UPDATED_DT
-        nullable: true
-        primaryKey: false
-        sourceColumnReferences:
-          - columnReferences: []
-            transform: ""
-        transform: ""
-        uniqueKey: false
-  name: BANK_ACCOUNTS
+  name: ORDER_ITEMS
   schema: ""
   sqlType: Source
   type: sourceInput
